@@ -1,0 +1,15 @@
+puts "Let's play a numbers game. How many numbers would you like to enter?"
+number = gets.chomp.to_i
+
+while number >= 1
+  puts "Enter the positive integer:"
+  p_inte = gets.chomp.to_i
+  number -= 1
+
+if p_inte % 3 == 0
+  puts "#{p_inte} is divisible by 3."
+else 
+  puts "#{p_inte} is not divisible by 3."
+end 
+
+end
